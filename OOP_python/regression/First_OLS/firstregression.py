@@ -3,7 +3,11 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 import statsmodels.api as sm
-data = pd.read_csv('1.01.+Simple+linear+regression.csv')
+import seaborn as sns
+sns.set()
+
+
+data = pd.read_csv('/home/clesson/Projects/Random_codes/OOP_python/regression/First_OLS/1.01.+Simple+linear+regression.csv')
 data.describe()
 y = data['GPA']
 x1 = data['SAT']
@@ -19,3 +23,5 @@ x = sm.add_constant(x1)
 result = sm.OLS(y,x).fit()
 result.summary()
 
+
+ 
