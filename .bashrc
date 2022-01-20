@@ -20,7 +20,7 @@ alias updte='sudo pacman -Syyu'
 alias updqte='sudo pacman -Syyu'
 alias upqll="paru -Syu --noconfirm"
 alias upal="paru -Syu --noconfirm"
-alias packages='pacman -Qq | wc -l
+alias packages='pacman -Qq | wc -l'
 
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
