@@ -41,7 +41,7 @@ alias version='sudo pacman -Q'
 alias v='nvim'
 alias ls='ls --color=auto'
 alias purge='sudo pacman -Rns'
-
+alias mirrors='sudo nvim /etc/pacman.conf'
 
 
 
