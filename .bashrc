@@ -1,12 +1,12 @@
-#My main bashrc file 
-
+# My main .bashrc file for arch-linux distros;
 #
 # ~/.bashrc
 #
 
+
 #Making neovim the default editor
-export EDITOR='nvim'
-export VISUAL='nvim'
+export EDITOR='/usr/bin/vim'
+export VISUAL='/usr/bin/vim'
 
 #Cleanup orphaned packages
 alias cleanup='sudo pacman -Rns $(pacman -Qtdq)'
@@ -41,7 +41,6 @@ alias version='sudo pacman -Q'
 alias v='nvim'
 alias ls='ls --color=auto'
 alias purge='sudo pacman -Rns'
-alias mirrors='sudo nvim /etc/pacman.conf'
-
-
-
+alias mirrors='sudo nvim /etc/pacman.d/mirrorlist'
+alias ctlstatus='sudo systemctl status'
+alias yd='yt-dlp'
