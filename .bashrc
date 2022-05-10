@@ -5,8 +5,8 @@
 
 
 #Making neovim the default editor
-export EDITOR='/usr/bin/vim'
-export VISUAL='/usr/bin/vim'
+export EDITOR='/usr/bin/nvim'
+export VISUAL='/usr/bin/nvim'
 
 #Cleanup orphaned packages
 alias cleanup='sudo pacman -Rns $(pacman -Qtdq)'
@@ -21,9 +21,6 @@ alias updqte='sudo pacman -Syyu'
 alias upqll="paru -Syu --noconfirm"
 alias upal="paru -Syu --noconfirm"
 alias packages='pacman -Qq | wc -l'
-
-# If not running interactively, don't do anything
-[[ $- != *i* ]] && return
 
 # Terminal prompt profile
 
