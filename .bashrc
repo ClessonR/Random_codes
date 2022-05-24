@@ -13,18 +13,14 @@ alias cleanup='sudo pacman -Rns $(pacman -Qtdq)'
 
 #fix obvious typo's
 alias cd..='cd ..'
-alias pdw="pwd"
 alias udpate='sudo pacman -Syyu'
 alias upate='sudo pacman -Syyu'
 alias updte='sudo pacman -Syyu'
 alias updqte='sudo pacman -Syyu'
-alias upqll="paru -Syu --noconfirm"
-alias upal="paru -Syu --noconfirm"
 alias packages='pacman -Qq | wc -l'
 
 # Terminal prompt profile
-
-# PS1="\[\e[31;40m\][\[\e[m\]\[\e[35;40m\]\u\[\e[m\]\[\e[31;40m\]]\[\e[m\]\[\e[36m\]\w\[\e[m\]\[\e[33m\]\\$\[\e[m\]: "
+PS1="\[\e[31;40m\][\[\e[m\]\[\e[35;40m\]\u\[\e[m\]\[\e[31;40m\]]\[\e[m\]\[\e[36m\]\w\[\e[m\]\[\e[33m\]\\$\[\e[m\]: "
 
 #Default System Aliases
 alias c="clear"
