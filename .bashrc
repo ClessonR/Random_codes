@@ -16,18 +16,18 @@ alias cd..='cd ..'
 alias udpate='sudo pacman -Syyu'
 alias upate='sudo pacman -Syyu'
 alias updte='sudo pacman -Syyu'
-alias updqte='sudo pacman -Syyu'
+alias update='sudo pacman -Syyu'
 alias packages='pacman -Qq | wc -l'
 
 # Terminal prompt profile
-PS1="\[\e[31;40m\][\[\e[m\]\[\e[35;40m\]\u\[\e[m\]\[\e[31;40m\]]\[\e[m\]\[\e[36m\]\w\[\e[m\]\[\e[33m\]\\$\[\e[m\]: "
+#PS1="\[\e[31;40m\][\[\e[m\]\[\e[35;40m\]\u\[\e[m\]\[\e[31;40m\]]\[\e[m\]\[\e[36m\]\w\[\e[m\]\[\e[33m\]\\$\[\e[m\]: "
 
 #Default System Aliases
 alias c="clear"
 alias updt="sudo pacman -Syu"
 alias get="sudo pacman -S"
 alias find="sudo pacman -Ss"
-alias ee="exit"
+alias e="exit"
 alias ccache="sudo pacman -Sc"
 alias bashrc='sudo nvim ~/.bashrc'
 alias version='sudo pacman -Q'
@@ -36,4 +36,4 @@ alias ls='ls --color=auto'
 alias purge='sudo pacman -Rns'
 alias mirrors='sudo nvim /etc/pacman.d/mirrorlist'
 alias ctlstatus='sudo systemctl status'
-alias yd='yt-dlp'
+
